@@ -48,8 +48,6 @@ Deskripsi singkat tentang aplikasi. Misalnya:
 
 ![Contact](./gambar/08.contact.png)
 
-> 💡 **Catatan**: Simpan semua screenshot dalam folder `screenshots/` di root repositorimu.
-
 ---
 
 ## 💻 Cara Instalasi
