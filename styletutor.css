@@ -1,0 +1,64 @@
+body {
+    font-family: 'comic sans ms';
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#Tutors {
+    padding: 50px 0;
+}
+
+.kolom {
+    text-align: center;
+}
+
+.Deskripsi {
+    font-size: 24px;
+    color: #0066cc;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tutor-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kartu-tutor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.kartu-tutor p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.kartu-tutor:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}

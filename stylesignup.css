@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+    --primary-blue: #233975;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 60%;
+    text-align: center;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 180px;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background: linear-gradient(
+        rgba(255, 5, 0, 0.301),
+        rgba(0, 7, 255, 0.804)),
+        url("https://img.freepik.com/free-photo/close-up-hand-taking-notes_23-2148888827.jpg?w=826&t=st=1702660972~exp=1702661572~hmac=28a16b2250fb0282c3b9960c191b08c5cfae8aad29a3d47dad2f5f87edbd2f13");
+    background-size: cover;
+}
+
+.left .copy {
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.right.copy {
+    color: black;
+    text-align: center;
+}
+
+.right .copy p {
+    margin: 0.4em;
+    font-size: 0.6rem;
+}
+
+.right form {
+    width: 100%;
+    max-width: 240px;
+    padding: 0,5px;
+    box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    padding: 0.5em;
+    
+    margin-bottom: 0.7rem;
+    font-size: 0.6rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.6rem;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+.checkmark {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    background-color: #fff;
+}
+
+.checkbox-container .checkmark::after {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    width: 2.5px;
+    height: 4px;
+    left: 1.5px;
+    top: 0.5px;
+    transform: rotate(45deg);
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-btn:hover {
+    background: #4f6ec2;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    h1 {
+        font-size: 1.6rem;
+        color: aliceblue;
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+    .left {
+        background: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.993))
+            url("https://img.freepik.com/free-photo/close-up-hand-taking-notes_23-2148888827.jpg?w=826&t=st=1702660972~exp=1702661572~hmac=28a16b2250fb0282c3b9960c191b08c5cfae8aad29a3d47dad2f5f87edbd2f13");
+    }
+    .left p {
+        color: aliceblue;
+    }
+}
